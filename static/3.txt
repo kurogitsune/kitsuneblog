@@ -1,0 +1,29 @@
+<div id="sample_post3" class="post_title" style="text-align: justify;">
+<h1 style="text-align: center;">Installation</h1>
+
+<p>If you see this text in the web browser, the blog is working. It should be slowly fading in at a set pace of one symbol per 10 minutes. For debugging purposes, the blog fades in almost fully at first.</p>
+
+<p>1. Please, open the index.py in text editor. Locate the line #SETUP. The code in this section is the only thing you need to change. </p>
+
+<p>2. Uncomment the origin_time line and set the present date at the moment of deployment. Comment out the debug line. The script will be fading in a symbol every 10 seconds from that moment in time.</p>
+
+<p>3. The next line sets the speed of printing out the content. The default interval between symbols is set very low for the demo. Set this to 10*60 (10 minute intervals) or any other.</p>
+
+<p>4. Adjust the_delay parameter in the shrine.js file in the static folder. The slower you want the text to fade in, the larger should be the delay. If you want the letters to fade in fully one at a time, the delay in shrine.js should be the same as in step 3. If you would like a nice gradual trail, set increase it by 5-10 times or more. </p>
+
+<p>5. Put your content in the text files. All the blog posts should be placed in the static folder and be numerically named 1.txt 2.txt etc. The format is HTML, but every tag needs to be closed (even &lt;hr&gt; tag needs to be matched with a closing tag, which is in fact in line with the standard, if you are curious). Input tags, some escape chars and images are not yet supported at the moment.
+
+<p>6. The idea is that you keep writing new files as the blog fades in for the users. You may arrange your data between files in any way, but do end each post with a special &lt;!-- --&gt; line. This indicates that there are no open tags at this point (a logical place to end a blog post). This lets the script do some clean up and avoid cluttering the page.</p>
+
+<p>7. Every post has to be enclosed in a div tag with class "post_title". The script will look for h1 inside each such div and use the contents of it as a title for the post. Script generates a quick nav bar from these. To insert a nav bar just paste the span with id="nav" in one of the static text files</p>
+
+<p>8. The template comes with no css - style it to your preference. </p>
+
+<p>9. When using a hosting like pythonanywhere, you need a line in the end of index.py, response.headers['X-Accel-Buffering'] = 'no', which modifies the headers of the responses. If this is not done, nginx on the server side caches the responses and the script will not work. </p>
+
+<p> If the script reaches the end of the text files, it will wait a day for you to write something new.</p>
+
+<p> The script has known bugs in the way it handles spaces - please, use nonbreakable spaces before tags. Or help out and fork the project on git. </p>
+
+</div>
+<!-- -->

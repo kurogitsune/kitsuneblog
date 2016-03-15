@@ -1,0 +1,8 @@
+<h1 style="text-align: center; ">Kitsune blog</h1>
+<span style="color:#AAA; font-size: 0.8em;">Jump to:&nbsp;<span id="nav"><A href="#nav">top</A></span></span>
+<h3 style="text-align: center;">
+<span style=" font-weight: normal;">A template for a blog, which writes 1 symbol every 10 minutes</span></h3><hr></hr>
+<div id="sample_post" class="post_title" style="text-align: justify;">
+<h1 style="text-align: center; ">...</h1>
+That's about 1 blog post per week. This speed is adjustable.</div>
+<!-- -->

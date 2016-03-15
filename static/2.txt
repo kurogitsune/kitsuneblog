@@ -1,0 +1,8 @@
+<div id="sample_post2" class="post_title" style="text-align: justify;">
+<h1 style="text-align: center; ">...</h1>
+<p>Written in python (+ flask) and js in a few hundred lines of code. </p>
+<p>Text will slowly fade in for every user, whenever they come, at the same pace. No one will see updates too soon. Your webpage will fade in uniformly as long as you keep up with the update schedule. </p>
+<p> Supports unicode and most of HTML layout. Support for input controls and images coming soon.</p>
+<p><div style="text-align:center"> <a href="#">Fork or clone on GitHub</a>&nbsp;or&nbsp;<a href="#">See Demo on my blog</a> </div></p>
+</div>
+<!-- -->
